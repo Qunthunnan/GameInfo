@@ -1,5 +1,9 @@
 .app_title {
     padding: 44px 0 23px 0;
+    position: relative;
+}
+
+.app_title__more_info {
     display: none;
 }
 
@@ -35,7 +39,7 @@
     margin: 0 24px 0 0;
 }
 
-.app_title__titke_links {
+.app_title__title_links {
     display: flex;
     flex-direction: column;
 }
@@ -43,7 +47,7 @@
 .app_title__title {
     color: #fff;
     font-weight: 700;
-    font-size: 30;
+    font-size: 30px;
 }
 
 .app_title__links {
@@ -236,4 +240,178 @@
     border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (max-width: 991px) {
+    .app_title__main_card {
+        flex-direction: column;
+        height: 280px;
+    }
 
+    .app_title__background_card {
+        padding: 0 30px;
+    }
+
+    .app_title__title {
+        font-size: 24px;
+    }
+
+    .app_title__links {
+        flex-wrap: wrap;
+    }
+
+    .app_title__link {
+        margin: 0 8px 5px 0;
+    }
+
+    .app_title__bottom {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .app_title {
+        padding: 0;
+        background-color: var(--main_card_bg--light);
+        box-shadow: 0px 22px 59px rgba(42, 134, 229, 0.07);
+    }
+
+    .app_title__main_card {
+        border-radius: 0px;
+        height: 226px;
+        box-shadow: none;
+    }
+
+    .app_title__background_card {
+        background: url('@/images/app_bg_tablet.jpg') center/cover no-repeat, #161c3ab0;
+        height: 180px;
+        display: flex;
+        align-items: center;
+    }
+
+    .app_title__title {
+        font-size: 35px;
+    }    
+
+    .app_title__links, .app_title__right {
+        display: none;
+    }
+
+    .app_title__bottom {
+        flex-basis: unset;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app_title__menu_list {
+        display: none;
+    }
+
+    .app_title__set_rating {
+        display: none;
+    }
+
+    .app_title__more_info {
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        color: var(--main_card_more_info--light);
+    }
+
+    .app_title__mobile_btn {
+        margin: 0 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 15px;
+        width: 20px;
+    }
+
+    .app_title__mobile_btn span {
+        background-color: var(--main_card_more_info--light);
+        border-radius: 1px;
+        height: 3px;
+        width: inherit;
+    }
+
+    .app_title__menu_list--active {
+        background-color: var(--main_card_bg--light);
+        display: flex;
+        left: 0%;
+        top: 100%;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        padding: 7px 0 36px 0;
+    }
+
+    .app_title__menu_list--active .app_title__menu_item span {
+        background: linear-gradient(to right, #0DD0BA 0%, #2A86E5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .app_title__menu_list--active .app_title__menu_item {
+        margin: 0 0 12px 0;
+    }
+
+    .app_title__menu_list--active .app_title__menu_item:last-child {
+        margin: 0;
+    }
+
+    .app_title__menu_list--active .app_title__menu_item a {
+        padding: 0 0 12px 0;
+        display: block;
+        text-align: center;
+        width: 350px;
+        margin: 0 auto;
+        border: none;
+        font-size: 20px;
+        font-weight: 700;
+        position: relative;
+    }
+
+    .app_title__menu_list--active .app_title__menu_item--active a {
+        padding: 7px 0;
+    }
+
+    .app_title__menu_list--active .app_title__menu_item:first-child a::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 24px;
+        border-radius: 40px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(to right, #0DD0BA 0%, #2A86E5 100%);
+    }
+}
+
+@media (max-width: 576px) {
+    .app_title__title {
+        font-size: 24px;
+    }
+
+    .app_title__main_card {
+        height: 175px;
+    }
+
+    .app_title__favicon {
+        height: 89px;
+        width: 89px;
+        margin: 0 15px 0 0;
+    }
+
+    .app_title__background_card {
+        padding: 0 20px;
+        border-radius: 30px;
+        height: 129px;
+        background: url('@/images/app_bg_mobile.jpg') center/cover no-repeat, #161c3ab0;
+    }
+
+    .app_title__menu_list--active {
+        padding: 0px 0 36px 0;
+    }
+}
