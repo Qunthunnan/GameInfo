@@ -2,6 +2,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = function loaders () {
   return [
         {
+          test: /\.(html)$/,
+          use: ['html-loader']
+        },
+        {
           test: /\.(css)$/,
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
         },

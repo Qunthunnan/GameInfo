@@ -1,5 +1,6 @@
 @import 'blocks/_fonts.css';
 @import 'blocks/_header.css';
+@import 'blocks/_subheader.css';
 
 :root {
     --theme_switcher_bg--light: #fff;
@@ -31,6 +32,10 @@
     font-family: 'Red Hat Display', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--main_bg--light);
 }
 
 .container {
