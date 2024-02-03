@@ -1,13 +1,20 @@
 @import 'blocks/_fonts.css';
 @import 'blocks/_header.css';
 @import 'blocks/_subheader.css';
+@import 'blocks/_app_title.css';
 
 :root {
     --theme_switcher_bg--light: #fff;
     --theme_switcher_bg--dark: #183A5D;
 
+    --subheader_bg--light: #fff;
+    --subheader_bg--dark: #0E1219;
+
     --subheader__menu_items--light: #2A86E5;
     --subheader__menu_items--dark: #0DD0BA;
+
+    --subheader__mobile_menu_items--light: #707070;
+    --subheader__mobile_menu_items--dark: #fff;
 
     --search_bg--light: #EEEEEE;
     --search_bg--dark: #183A5D;
@@ -17,6 +24,18 @@
 
     --main_bg--light: #FCFCFC;
     --main_bg--dark: #0E1219;
+
+    --main_card_bg--light: #fff;
+    --main_card_bg--dark: #0E1219;
+
+    --set_rating_empty_bg--ligth: #EBF6F5;
+    --set_rating_empty_bg--dark: #183A5D;
+
+    --set_rating_selected_text--light: #FFFFFF;
+    --set_rating_selected_text--dark: #FFFFFF;
+
+    --set_rating_not_selected_text-light: #707070;
+    --set_rating_not_selected_text-dark: #FFFFFF;
 
     --contacts_bg--light: #fff;
     --contacts_bg--dark: #202434;
@@ -43,53 +62,32 @@ body {
     margin: 0 auto;
 }
 
-.progress-indicator {
-    position: relative;
-    background: rgba(0,0,0,0.44);
-    height: 85px;
-    width: 85px;
-    border-radius: 100%;
-}
-
-.progressline {
-    border-radius: 100%;
-    /* background: conic-gradient(from -40.59deg at 52% 49.77%, #DC4A19 0deg, #FCC539 43.78deg, #DC4A19 360deg); */
-    height: 100%;
-    width: 100%;
+.icon {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-.rating {
-    height: 70.5px;
-    width: 70.5px; 
-    display: flex;
-    color: #fff;
-    font-weight: 900;
-    font-size: 30px;
-    background-color: #000;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 100%;
-}
-.progress-indicator circle {
-    transform-origin: center;
-    transform: rotate(270deg);
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 8.2px;
-    stroke-dasharray: 450;
-    stroke-dashoffset: 300;
 }
 
-.progress-indicator svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+@media(max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
 }
 
+@media(max-width: 991px) {
+    .container {
+        width: 728px;
+    }
+}
 
+@media(max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
 
-
-
+@media(max-width: 380px) {
+    .container {
+        width: 92%;
+    }
+}

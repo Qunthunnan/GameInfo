@@ -1,0 +1,239 @@
+.app_title {
+    padding: 44px 0 23px 0;
+    display: none;
+}
+
+.app_title__main_card {
+    display: flex;
+    flex-direction: column;
+    height: 234px;
+    background-color: var(--main_card_bg--light);
+    border-radius: 40px;
+    box-shadow: 0px 22px 59px rgba(42, 134, 229, 0.07);
+}
+
+.app_title__background_card {
+    padding: 0 56px;
+    height: 184px;
+    background: url('@/images/app_bg.jpg') center/cover no-repeat, #161c3ab0;
+    background-blend-mode: darken;  
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app_title__left {
+    display: flex;
+    align-items: center;
+}
+
+.app_title__favicon {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.16);
+    margin: 0 24px 0 0;
+}
+
+.app_title__titke_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.app_title__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 30;
+}
+
+.app_title__links {
+    list-style: none;
+    display: flex;
+}
+
+.app_title__link {
+    border-radius: 17px;
+    margin: 0 8px 0 0;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.app_title__link--secondary {
+    border: 1px solid #fff;
+    background: unset;
+}
+
+.app_title__link--primary {
+    border: unset;
+    background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
+}
+
+.app_title__link a {
+    display: flex;
+    padding: 2px 13px;
+    align-items: center;
+}
+
+.app_title__link a img {
+    margin: 0 3px 0 0;
+}
+
+.app_title__link a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app_title__right {
+    display: flex;
+    padding: 58px 0 36px 0;
+}
+
+.app_title__rate {
+    position: relative;
+    background: rgba(0,0,0,0.44);
+    height: 85px;
+    width: 85px;
+    border-radius: 100%;
+    margin: 0px 12px 0 0;
+}
+
+.app_title__outer {
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_title__inner {
+    height: 70.5px;
+    width: 70.5px; 
+    display: flex;
+    color: #fff;
+    font-weight: 900;
+    font-size: 30px;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.app_title__rate circle {
+    transform-origin: center;
+    transform: rotate(270deg);
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 8.2px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 300;
+}
+
+.app_title__rate svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.app_title__rate_title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.app_title__rate_count {
+    font-size: 16px;
+    color: #fff;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.app_title__user_rating {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.app_title__rating_bold {
+    font-size: 20px;
+    font-weight: 700;
+    color: #F9B936;
+}
+
+.app_title__bottom {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 41px;
+}
+
+.app_title__menu_list, .app_title__rating_list {
+    display: flex;
+    list-style: none;
+}
+
+.app_title__menu_item {
+    color: #707070;
+}
+
+.app_title__menu_item a {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 18px;
+    border-right: 1px solid #707070;
+}
+
+.app_title__menu_item:last-child a{
+    border-right: none;
+}
+
+.app_title__menu_item a:link, .app_title__menu_item a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app_title__rating_list {
+    position: relative;
+    background: linear-gradient(270deg, #FCC539 0%, #DC4A19 100%);
+    border-radius: 17px;
+}
+
+.app_title__rating_list::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 33%;
+    background-color: #EBF6F5;
+    border-radius: 0 17px 17px 0;
+}
+
+.app_title__rating_item {
+    z-index: 1;
+    color: #707070;
+    padding: 5px 5px;
+    border-right: 1px solid #707070;
+}
+
+.app_title__rating_item:last-child {
+    border-right: none;
+    padding: 5px 8px;
+}
+
+.app_title__rating_item:nth-child(1) {
+    padding: 5px 10px;
+}
+
+.app_title__rating_item:nth-child(2) {
+    padding: 5px 8px;
+}
+
+.app_title__rating_item--active {
+    color: #fff;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
