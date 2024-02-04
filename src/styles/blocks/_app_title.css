@@ -3,6 +3,10 @@
     position: relative;
 }
 
+.app_title__mobile_menu {
+    display: none;
+}
+
 .app_title__more_info {
     display: none;
 }
@@ -89,7 +93,7 @@
 
 .app_title__right {
     display: flex;
-    padding: 58px 0 36px 0;
+    padding: 58px 0 45px 0;
 }
 
 .app_title__rate {
@@ -334,32 +338,34 @@
         width: inherit;
     }
 
-    .app_title__menu_list--active {
-        background-color: var(--main_card_bg--light);
-        display: flex;
-        left: 0%;
-        top: 100%;
-        flex-direction: column;
-        position: absolute;
-        width: 100vw;
-        padding: 7px 0 36px 0;
+    .app_title__mobile_menu--active {
+        display: block;
     }
 
-    .app_title__menu_list--active .app_title__menu_item span {
+    .app_title__mobile_menu .app_title__menu_list {
+        background-color: var(--main_card_bg--light);
+        display: flex;
+        flex-direction: column;
+        /* width: 100vw; */
+        padding: 7px 0 36px 0;
+        box-shadow: 0px 22px 59px rgba(42, 134, 229, 0.07);
+    }
+
+    .app_title__mobile_menu .app_title__menu_item span {
         background: linear-gradient(to right, #0DD0BA 0%, #2A86E5 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    .app_title__menu_list--active .app_title__menu_item {
+    .app_title__mobile_menu .app_title__menu_item {
         margin: 0 0 12px 0;
     }
 
-    .app_title__menu_list--active .app_title__menu_item:last-child {
+    .app_title__mobile_menu .app_title__menu_item:last-child {
         margin: 0;
     }
 
-    .app_title__menu_list--active .app_title__menu_item a {
+    .app_title__mobile_menu .app_title__menu_item a {
         padding: 0 0 12px 0;
         display: block;
         text-align: center;
@@ -371,11 +377,11 @@
         position: relative;
     }
 
-    .app_title__menu_list--active .app_title__menu_item--active a {
+    .app_title__mobile_menu .app_title__menu_item--active a {
         padding: 7px 0;
     }
 
-    .app_title__menu_list--active .app_title__menu_item:first-child a::after {
+    .app_title__mobile_menu .app_title__menu_item--active a::after {
         content: '';
         position: absolute;
         display: block;
@@ -411,7 +417,7 @@
         background: url('@/images/app_bg_mobile.jpg') center/cover no-repeat, #161c3ab0;
     }
 
-    .app_title__menu_list--active {
+    .app_title__menu_list {
         padding: 0px 0 36px 0;
     }
 }

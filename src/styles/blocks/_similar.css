@@ -1,0 +1,117 @@
+.similar {
+    padding: 34px 11px 0;
+    grid-area: similar;
+}
+
+.similar__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--content_text--light);
+}
+
+.similar__title::after {
+    content: '';
+    display: block;
+    margin: 9px 0 0 22px;
+    height: 8px;
+    width: 44px;
+    border-radius: 40px;
+
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #0DD0BA 0%, #2A86E5 100%);
+}
+
+.similar__wrapper {
+    padding: 21px 0;
+    display: grid;
+    justify-content: space-between;
+    row-gap: 16px;
+    grid-template: auto / repeat(2, 387px);
+    grid-auto-rows: auto;
+}
+
+.similar__card {
+    background-color: var(--similar__card_bg--light);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 3px 16px rgba(42, 134, 229, 0.08);
+}
+
+.similar__card_icon {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.similar__card_icon img {
+    height: 171px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+
+.similar__card_title {
+    margin: 18px 0 0 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2A86E5;
+}
+
+.similar__card_info {
+    margin: 5px 0 0 0;
+    padding: 0 65px;
+    justify-content: space-between;
+}
+
+.similar__card_info, .similar__card_user, .similar__card_date {
+    display: flex;
+}
+
+.similar__card_info .icon, .similar__card_user .icon {
+    margin: 0 10px 0 0;
+}
+
+@media (max-width: 1199px) {
+    .similar {
+        padding: 34px 0 0 0;
+    }
+
+    .similar__wrapper {
+        grid-template: auto / repeat(2, 350px);
+    }
+
+    .similar__card_info {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .similar {
+        padding: 41px 0 0 0;
+    }
+
+    .similar__title {
+        margin: 0 0 0 10px;
+    }
+
+    .similar__wrapper {
+        grid-template: auto / repeat(2, minmax(260px, 350px));
+    }
+
+    .similar__card_info {
+        padding: 0;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 576px) {
+    .similar {
+        padding: 62px 0 0 0;
+    }
+    .similar__wrapper {
+        grid-template: auto / minmax(350px, 387px);
+        justify-content: center;
+        row-gap: 14px;
+    }
+}

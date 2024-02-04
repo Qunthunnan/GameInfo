@@ -130,6 +130,7 @@
     .subheader__mobile_menu--active {
         display: block;
         position: relative;
+        box-shadow: 0px 22px 59px rgba(42, 134, 229, 0.07);
     }
 
     .subheader > .subheader__mobile_menu--active {
@@ -137,6 +138,8 @@
         background-color: var(--subheader_bg--light);
         position: absolute;
         width: 100%;
+        top: 99.5%;
+        z-index: 2;
         height: calc(100vh - 110px);
     }
 

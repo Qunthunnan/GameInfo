@@ -1,0 +1,33 @@
+.content {
+    padding: 24px 0 114px 0;
+}
+
+.content__wrapper {
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: 
+    "article ad"
+    "similar ad";
+}
+
+@media (max-width: 991px) {
+    .content__wrapper {
+        grid-template-areas: 
+        "article"
+        "ad"
+        "similar";
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 24px 0 105px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        padding: 24px 0 114px 0;
+    }
+}
+

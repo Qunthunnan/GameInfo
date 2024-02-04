@@ -1,0 +1,102 @@
+.game_descr {
+    grid-area: article;
+    padding: 0 0 29px 0;
+    width: 810px;
+}
+
+.game_descr__catalog_list {
+    display: flex;
+    list-style: none;
+}
+
+.game_descr__catalog_item {
+    margin: 0 6px 0 0;
+}
+
+.game_descr__catalog_item--active {
+    margin: 0;
+}
+
+.game_descr__catalog_item::after {
+    content: '>';
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.game_descr__catalog_item a, .game_descr__catalog_item a:link, .game_descr__catalog_item a:visited {
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+    text-decoration: none;
+}
+
+.game_descr__catalog_item--active a, .game_descr__catalog_item--active a:link, .game_descr__catalog_item--active a:visited {
+    font-size: 14px;
+    font-weight: 700;
+    color: #707070;
+    text-decoration: none;
+}
+
+.game_descr__catalog_item--active::after {
+    content: '';
+}
+
+.game_descr__title {
+    font-size: 42px;
+    font-weight: 900;
+    background: linear-gradient(to right, #0DD0BA 0%, #2A86E5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game_descr__descr {
+    margin: 20px 0 0 0;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--game_descr_p_text--light);
+}
+
+@media (max-width: 1199px) {
+    .game_descr {
+        width: 730px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game_descr {
+        width: unset;
+    }
+
+    .game_descr__catalog_list {
+        flex-wrap: wrap;
+    }
+
+    .game_descr__catalog_item {
+        position: relative;
+        line-height: 24px;
+        margin: 0 14px 0 0;
+    }
+    .game_descr__catalog_item::after {
+        position: absolute;
+        top: 10px;
+        transform: translateY(-50%);
+        right: -11px;
+    }
+}
+
+@media (max-width: 576px) {
+    .game_descr {
+        padding: 0 0 39px 0;
+    }
+    .game_descr__title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .game_descr__catalog_item {
+        line-height: 18px;
+    }
+}
