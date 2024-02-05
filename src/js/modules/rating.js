@@ -99,7 +99,7 @@ export class Rating {
             percentage = 100;
         }
         if(percentage <= 100 && percentage >= 20) {
-            this.overlay.style.background = `linear-gradient(to left, #${this.overlayColor} 0%, #${this.overlayColor} ${100-percentage}%, #ffffff00 0%, #ffffff00 100%)`;
+            this.overlay.style.background = `linear-gradient(to left, ${this.overlayColor} 0%, ${this.overlayColor} ${100-percentage}%, #ffffff00 0%, #ffffff00 100%)`;
         }        
     }
 
@@ -136,6 +136,11 @@ export class Rating {
             this.updateActivity();
             this.updateScore();
         }
+    }
+
+    updateOverlayColor(color) {
+        this.overlayColor = color;
+        this.setOverlay(this.mouseSavedPosition);
     }
 }
 

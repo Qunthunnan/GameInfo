@@ -1,0 +1,53 @@
+.socials {
+    top: 287px;
+    left: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.socials a:first-child {
+    border-radius: 0 4px 0 0;
+}
+
+.socials a:last-child {
+    border-radius: 0 0 4px 0;
+}
+
+.socials__facebook {
+    background-color: #3A579A;
+}
+
+.socials__twitter {
+    background-color: #00ABF0;
+}
+
+.socials__telegram {
+    background-color: #24A2E0;
+}
+
+.socials__pinterest {
+    background-color: #CD1C1F;
+}
+
+.socials__reddit {
+    background-color: #FC461E;
+}
+
+.socials__heart {
+    background-color: #F95149;
+}
+
+@media (max-width: 768px) {
+    .socials {
+        display: none;
+    }
+}

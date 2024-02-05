@@ -1,6 +1,6 @@
 .header {
     height: 50px;
-    background: var(--header_gradient);
+    background: var(--base_gradient);
 }
 
 .header__wrapper, header .container {
@@ -65,16 +65,18 @@
 }
 
 .header__theme_switcher {
+    display: flex;
     cursor: pointer;
     height: 29px;
     width: 54px;
     padding: 2px 3px;
     border-radius: 50px;
-    background-color: var(--theme_switcher_bg--light);
+    justify-content: start;
+    background-color: var(--theme_switcher_bg);
 }
 
 .header__theme_state {
-    background: url('@/icons/light-mode.svg') center no-repeat;
+    background: var(--theme_switcher_icon);
     background-color: #183A5D;
     border-radius: 50%;
     height: 25px;

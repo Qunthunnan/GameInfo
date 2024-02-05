@@ -1,58 +1,52 @@
 :root {
-    --theme_switcher_bg--light: #fff;
-    --theme_switcher_bg--dark: #183A5D;
-
-    --subheader_bg--light: #fff;
-    --subheader_bg--dark: #0E1219;
-
-    --subheader__menu_items--light: #2A86E5;
-    --subheader__menu_items--dark: #0DD0BA;
-
-    --subheader__mobile_menu_items--light: #707070;
-    --subheader__mobile_menu_items--dark: #fff;
-
-    --search_bg--light: #EEEEEE;
-    --search_bg--dark: #183A5D;
-
-    --search_text--light: #757575;
-    --search_text--dark: #fff;
-
-    --main_bg--light: #FCFCFC;
-    --main_bg--dark: #0E1219;
-
-    --main_card_bg--light: #fff;
-    --main_card_bg--dark: #0E1219;
-
-    --main_card_more_info--light: #707070;
-    --main_card_more_info--dark: #fff;
-
-    --set_rating_empty_bg--ligth: #EBF6F5;
-    --set_rating_empty_bg--dark: #183A5D;
-
-    --set_rating_selected_text--light: #FFFFFF;
-    --set_rating_selected_text--dark: #FFFFFF;
-
-    --set_rating_not_selected_text-light: #707070;
-    --set_rating_not_selected_text-dark: #FFFFFF;
-
-    --content_text--light: #707070;
-    --content_text--dark: #fff;
-
-    --similar__card_bg--light: #fff;
-    --similar__card_bg--dark: #202434;
-
-    --logo_bg--light: url('@/images/logo_light.png') center no-repeat;
-    --logo_bg--dark: url('@/images/logo_dark.png') center no-repeat;
-
-    --contacts_bg--light: #fff;
-    --contacts_bg--dark: #202434;
-
-    --contacts_text--light: #0DD0BA;
-    --contacts_text--dark: #fff;
-
-    --header_gradient: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
+    --base_gradient: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
 }
 
+.light_theme {
+    --theme_switcher_bg: #fff;
+    --theme_switcher_icon: url('@/icons/light-mode.svg') center no-repeat;
+    --subheader_bg: #fff;
+    --subheader__menu_items: #2A86E5;
+    --subheader__mobile_menu_items: #707070;
+    --search_bg: #EEEEEE;
+    --search_text: #757575;
+    --main_bg: #FCFCFC;
+    --main_card_bg: #fff;
+    --main_card_more_info: #707070;
+    --set_rating_empty_bg: #EBF6F5;
+    --set_rating_selected_text: #FFFFFF;
+    --set_rating_not_selected_text: #707070;
+    --set_rating_active_border: rgba(255, 255, 255, 0.2);
+    --set_rating_inactive_border: rgba(112, 112, 112, 0.15);
+    --content_text: #707070;
+    --similar__card_bg: #fff;
+    --logo_bg: url('@/images/logo_light.png') center no-repeat;
+    --contacts_bg: #fff;
+    --contacts_text: #0DD0BA;
+}
+
+.dark_theme {
+    --theme_switcher_bg: #183A5D;
+    --theme_switcher_icon: url('@/icons/dark-mode.svg') center no-repeat;
+    --subheader_bg: #0E1219;
+    --subheader__menu_items: #0DD0BA;
+    --subheader__mobile_menu_items: #fff;
+    --search_bg: #183A5D;
+    --search_text: #fff;
+    --main_bg: #0E1219;
+    --main_card_bg: #0E1219;
+    --main_card_more_info: #fff;
+    --set_rating_empty_bg: #183A5D;
+    --set_rating_selected_text: #FFFFFF;
+    --set_rating_not_selected_text: #FFFFFF;
+    --set_rating_active_border: rgba(255, 255, 255, 0.2);
+    --set_rating_inactive_border: rgba(255, 255, 255, 0.1);
+    --content_text: #fff;
+    --similar__card_bg: #202434;
+    --logo_bg: url('@/images/logo_dark.png') center no-repeat;
+    --contacts_bg: #202434;
+    --contacts_text: #fff;
+}
 
 *, li, ul{
     font-family: 'Red Hat Display', sans-serif;
@@ -61,7 +55,7 @@
 }
 
 body {
-    background-color: var(--main_bg--light);
+    background-color: var(--main_bg);
 }
 
 .container {
@@ -108,3 +102,4 @@ body {
 @import 'blocks/_game_descr.css';
 @import 'blocks/_similar.css';
 @import 'blocks/_footer.css';
+@import 'blocks/_socials.css';

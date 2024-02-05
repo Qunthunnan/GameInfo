@@ -1,6 +1,6 @@
 .subheader {
     height: 110px;
-    background-color: var(--subheader_bg--light);
+    background-color: var(--subheader_bg);
 }
 
 .subheader__mobile_menu {
@@ -19,6 +19,9 @@
 
 .subheader__logo {
     margin: 0 62px 0 0;
+    height: 18px;
+    width: 134px;
+    background: var(--logo_bg);
 }
 
 .subheader__left {
@@ -33,7 +36,7 @@
 .subheader__menu_item a:link, .subheader__menu_item a:visited {
     font-weight: 500;
     font-size: 18px;
-    color: var(--subheader__menu_items--light);
+    color: var(--subheader__menu_items);
     text-decoration: none;
 }
 
@@ -57,8 +60,12 @@
     width: 175px;
     border: none;
     border-radius: 40px;
-    background-color: var(--search_bg--light);
-    color: var(--search_text_light);
+    background-color: var(--search_bg);
+    color: var(--search_text);
+}
+
+.subheader__search input::placeholder {
+    color: var(--search_text);
 }
 
 .subheader__search img {
@@ -135,7 +142,7 @@
 
     .subheader > .subheader__mobile_menu--active {
         overflow: scroll;
-        background-color: var(--subheader_bg--light);
+        background-color: var(--subheader_bg);
         position: absolute;
         width: 100%;
         top: 99.5%;
@@ -191,11 +198,11 @@
     }
 
     .subheader__mobile_menu--active .header__menu_item a {
-        color: var(--subheader__mobile_menu_items--light);
+        color: var(--subheader__mobile_menu_items);
     }
 
     .subheader__mobile_menu--active .icon svg path {
-        fill: var(--subheader__mobile_menu_items--light);
+        fill: var(--subheader__mobile_menu_items);
     }
 }
 
