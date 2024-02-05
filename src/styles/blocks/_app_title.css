@@ -202,21 +202,25 @@
     text-decoration: none;
 }
 
-.app_title__rating_list {
+.app_title__set_rating {
     position: relative;
-    background: linear-gradient(270deg, #FCC539 0%, #DC4A19 100%);
-    border-radius: 17px;
 }
 
-.app_title__rating_list::after {
-    content: '';
+.app_title__rating_overlay {
     position: absolute;
     top: 0px;
     right: 0px;
     height: 100%;
-    width: 33%;
-    background-color: #EBF6F5;
-    border-radius: 0 17px 17px 0;
+    width: 100.4%;
+    background: linear-gradient(to left, #EBF6F5 0%, #EBF6F5 10%, #ffffff00 0%, #ffffff00 100%);
+    border-radius: 17px;
+}
+
+.app_title__rating_list {
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(270deg, #FCC539 0%, #DC4A19 100%);
+    border-radius: 17px;
 }
 
 .app_title__rating_item {

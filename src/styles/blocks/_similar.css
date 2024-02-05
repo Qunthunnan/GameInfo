@@ -58,6 +58,11 @@
     color: #2A86E5;
 }
 
+.similar__card_title a:link, .similar__card_title a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
 .similar__card_info {
     margin: 5px 0 0 0;
     padding: 0 65px;
