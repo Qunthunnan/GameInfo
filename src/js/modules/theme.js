@@ -3,7 +3,6 @@ export class ThemeChanger {
         this.switcherClass = switcherClass;
         this.lightThemeClass = lightThemeClass;
         this.darkThemeClass = darkThemeClass;
-        this.curentTheme;
 
         this.onChanging = onChanging;
 
@@ -31,8 +30,7 @@ export class ThemeChanger {
         document.documentElement.classList.remove(this.darkThemeClass);
 
         document.documentElement.classList.add(themeClass);
-        this.curentTheme = themeClass;
-        localStorage.setItem('theme', this.curentTheme);
+        localStorage.setItem('theme', themeClass);
         this.onChanging();
     }
 

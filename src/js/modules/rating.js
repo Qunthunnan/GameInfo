@@ -6,12 +6,10 @@ export class Rating {
         this.scoreTextClass = scoreTextClass;
         this.scoreCountClass = scoreCountClass;
         this.overlayColor = overlayColor;
-        this.curentPosition;
         this.mouseSavedPosition = 20;
         this.clickedScore = 0;
         this.movedPosition = 0;
-        this.isWaiting = false;
-        this.userScore = undefined;
+        this.isWaiting = undefined;
 
         this.ratingList = document.querySelector(`.${this.ratingClass}`);
         this.ratingItems = document.querySelectorAll(`.${this.itemClass}`);
